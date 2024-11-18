@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(59, 59, 59);
+}
+.box{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 30px;
+}
+.box::after, .box::before{
+    content: '';
+    width: 400px;
+    height: 550px;
+    background-image: conic-gradient(red, blue, orange, red);
+    position: absolute;
+    left: -4%;
+    top: -4%;
+    padding: 50px;
+    border-radius: 20px;
+    z-index: -1;
+}
+.box h1{
+    align-self: center;
+    font-size: 40px;
+}
+.box label{
+    font-size: 28px;
+}
+.box input{
+    width: 90%;
+    height: 50px;
+    font-size: 24px;
+}
+.box button{
+    position: relative;
+    right: 10px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(2, 192, 2);
+    color: white;
+    font-size: 24px;
+    letter-spacing: 2px;
+    align-self: center;
+}
+.box p{
+    position: relative;
+    top: 20px;
+    font-size: 24px;
+}
